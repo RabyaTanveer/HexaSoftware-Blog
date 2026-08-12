@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    background-color: rgb(204, 211, 216);
+}
+header{
+    margin-top: 10px;
+display: flex;
+justify-content: space-between;
+padding: 20px;
+align-items: center;
+}
+a{
+    text-decoration: none;
+    padding: 9px;
+    color: black;
+}
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+}
+.hero h1{
+    font-size:50px ;
+}
