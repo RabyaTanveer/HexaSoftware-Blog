@@ -3,6 +3,9 @@ body {
     background-color: #ffffff;
     color: #2a281b;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 h1 {
     font-size: 50px;
@@ -17,8 +20,13 @@ header {
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    background-color: #858b5f;
+    background-color: white;
     color: black;
+}
+
+.btn5 {
+    color: #ffffff;
+    background-color: #858b5f;
 }
 
 a {
@@ -28,11 +36,14 @@ a {
 }
 
 button {
-    color: white;
-    background-color: #2f3905;
     border: none;
     border-radius: 20px;
     padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.logo {
+    color: #858b5f;
 }
 
 /*hero-section*/
@@ -49,10 +60,19 @@ button {
 .hero h1 {
     color: black;
 }
-
+.btn{
+    color: #2f3905;
+    background-color: #ffffff;
+}
 .btn,
 .btn2 {
     margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
 }
 
 .image {
@@ -69,6 +89,11 @@ button {
     margin: 100px 20px 50px 20px;
     padding-top: 2px;
     line-height: 1.5;
+}
+
+.btn2 {
+    color: #ffffff;
+    background-color: #858b5f;
 }
 
 .blog-image {
@@ -90,7 +115,7 @@ button {
     text-align: center;
     gap: 60px;
     border-bottom: 1px solid #858b5f;
-margin: 0 20px 0 20px;
+    margin: 0 20px 0 20px;
 }
 
 .head {
@@ -137,6 +162,8 @@ margin: 0 20px 0 20px;
 .btn3 {
     width: 300px;
     margin-top: 30px;
+    background-color: #858b5f;
+    color: white;
 }
 
 .newsletter {
@@ -178,5 +205,185 @@ margin: 0 20px 0 20px;
 
 .copyright {
     text-align: center;
+
+}
+/*blog-page*/
+.blog-text{
+    text-align: left;
+    padding: 20px 40px 50px 0px;
+    max-width: 850px;
+    margin: 60px auto;
+    color: #2a281b; 
+}
+.blog-text h3{
+    color: #858b5f;
+    text-align: center;
     
 }
+.blog-text img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+textarea{
+    width: 900px;
+    height: 150px;
+    border: 1px solid #858b5f;
+    border-radius: 20px;
+}
+span{
+    background-color: #858b5f;
+    color: #ffffff;
+    padding: 5px 5px 5px 5px;
+    margin-left:  340px ;
+    border: 1px solid #858b5f;
+    border-radius: 12px;
+}
+.logo2{
+    color: black;
+}
+.blog-nav{
+    background-color: #858b5f;
+}
+#blog-btn{
+    color: #2f3905;
+    background-color: #ffffff;
+}
+.blog-post h1 {
+text-align: center;
+}
+.blog-post h3{
+    text-align: left;
+}
+.blog-post input{
+    width: 900px;
+    height: 50px;
+}
+/*about page*/
+.hero-about{
+      min-height: 600px;
+    background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+       url(img/7036943163754028.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-about h1{
+    color: white;
+}
+.about-story{
+     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px 20px 50px 20px;
+    padding-top: 2px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+    gap: 60px;
+    border-bottom:1px solid #858b5f ;
+}
+.about-images{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+.about-images img{
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.about-images img:nth-child(1){
+     top: 0;
+    left: 0;
+}
+.about-images img:nth-child(2){
+   top:140px;
+    left:120px;
+}
+.Reviews{
+    display: flex;
+    padding: 0px 20px 0px 20px;
+}
+.review{
+ border-radius: 20px;
+ border: 1px solid #858b5f;
+margin: 20px 0 20px 0;
+ padding: 10px 10px 10px 10px;
+ 
+}
+.review img{
+    border-radius: 50%;
+    
+}
+/*contact-page*/
+.contact-section {
+    background-color: #8b9163;
+    margin: 60px 100px;
+    padding: 60px 80px;
+    border-radius: 12px;
+}
+
+.contact-section  h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+.contact-info {
+    color: white;
+}
+
+.info {
+    margin-bottom: 30px;
+    border: 1px solid #ffffff;
+    padding: 5px 10px 5px 10px ;
+    width: 300px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 130px;
+    resize: none;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #f2f2f2;
+}
+
+.contact-form button {
+    align-self: center;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
